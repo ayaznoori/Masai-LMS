@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src=" https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assests/style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <!-- nav-bar div start here -->
+        <div id="nav-bar">
+              <div id="left-nav"><img src="./assests/img/logo.png" width="100px" alt=""></div>
+              <div id="mid-nav"> </div>
+              <div id="right-nav">
+                <div id="pic-nav"><img src="./assests/img/img.jpg" width="30px" alt=""></div>
+                <div id="name-nav">Mohammad Ayaz Noori</div>
+                <a onclick="profilemenu()"><i class="fa-solid fa-angle-down"></i> </a>
+                <div id="profile-menu"><p>Manage Account</p>
+                    <p>Profile</p>
+                    <p>Log Out</p> </div>
+              </div>
+
+        </div>
+        <!-- nav-bar ends here -->
+        <!-- main-body starts here -->
+        <div id="main-body">
+        <!-- left-main-body start here -->
+            <div id="left-main-body">
+                <div class="dashboard active"><a href="index.html"><i class="fa fa-house"></i>&nbsp;&nbsp;Dashboard</a></div>
+                <div class="assignments"><a href="assignments.html"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp; Assignments</a></div>
+                <div class="Tickets"><a href=""><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;Tickets</a></div>
+                <div class="notification"><a href="notification.html"><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;Notification</a></div>
+                <div class="ref-program"><a href=""><i class="fa-solid fa-hand-holding-hand"></i>&nbsp;&nbsp;Referral Program</a></div>
+                <div class="profile" ><a href="profile.html"><i class="fa-solid fa-id-card"></i>&nbsp;&nbsp;My Profile</a></div>
+            </div>
+        <!-- left-main-body ends here -->
+       <!--  right-main-body starts here -->
+            <div id="right-main-body">
+                <div id="top-banner">
+                    <div id="welcome-banner"></div>
+                    <div id="current-unit"><h3>Current Unit</h3> <h3>4</h3></div>
+                </div>
+                <div id="bottom-container">
+                    <div id="left-topic">
+                        <div id="topics">
+                            <div id="today-menu" onclick="menuchange()">Today's Routine</div>
+                            <div id="total-menu" onclick="menuchange2()">Previous Sessions</div>   
+                        </div>
+                     <hr>
+                        <div id="today-div">
+                        <!-- demo divs -->
+                            <div> <h2>Scrum</h2>
+                                  <p>Nrupul Dev</p>
+                            <div> <p>Time : - 9:00 AM</p><p>Date :- 13/05/2022 </p><p>Join Now</p></div>
+                            
+                            </div>
+                            <div> <h2>PSC (Recursion) </h2>
+                                <p>Aishwarya Shivachandra</p>
+                          <div> <p>Time : - 9:30 AM</p><p>Date :- 13/05/2022 </p><p>Join Now</p></div>
+                          
+                          </div>
+                          <div> <h2>Skillathon </h2>
+                            <p>Isha</p>
+                            <div> <p>Time : - 12:30 PM</p><p>Date :- 13/05/2022 </p><p>Join Now</p></div>
+                      
+                         </div>
+                         <div> <h2>Java Orientation </h2>
+                            <p>Swanand </p>
+                            <div> <p>Time : - 3:30 PM</p><p>Date :- 13/05/2022 </p><p>Join Now</p></div>
+                      
+                         </div>
+        
+                        </div>
+                        <div id="total-div" style="display:none">
+                            <div> <h2>Scrum</h2>
+                                <p>Nrupul Dev</p>
+                          <div> <p>Time : - 9:00 AM</p><p>Date :- 13/05/2022 </p><p class="present">Present</p></div>
+                          
+                          </div>
+                          <div> <h2>PSC (Recursion) </h2>
+                              <p>Aishwarya Shivachandra</p>
+                        <div> <p>Time : - 9:30 AM</p><p>Date :- 13/05/2022 </p><p class="absent">Absent</p></div>
+                        
+                        </div>
+                        <div> <h2>Skillathon </h2>
+                          <p>Isha</p>
+                          <div> <p>Time : - 12:30 PM</p><p>Date :- 13/05/2022 </p><p class="present">Present</p></div>
+                    
+                       </div>
+      
+                      </div>
+                      <div id="total-div" style="display:none">
+                           Hello I am here
+                      </div>
+                </div>
+                    <div id="right-topic">
+                         <h3>Achievements</h3>
+                         <div>
+                            <h4>Unit - 1</h4>
+                            <p>C1 - 9/10</p>    
+                            <p>D1 - 8/10</p>
+                            <P>CSBT - 8/10</P> 
+                        </div>
+                         <div><h4>Unit - 2</h4>
+                            <p>C1 - 8/10</p>    
+                            <p>D1 - 9/10</p>
+                            <P>CSBT - 7/10</P>
+                          </div>
+                         <div> 
+                            <h4>Unit - 3</h4>
+                            <p>C1 - 6/10</p>    
+                            <p>D1 - 7/10</p>
+                            <P>CSBT - 6/10</P>
+                         </div>
+                    </div>
+                </div>
+               
+              </div>
+              <!--  right-main-body ends here -->
+            </div>
+            <!-- main-body ends here --> 
+        </div>
+</body>
+</html>
+<script >
+    function menuchange(){
+      document.getElementById("today-div").style.display="block";
+      document.getElementById("total-div").style.display="none";
+      document.getElementById("total-menu").style.boxShadow="none";
+      document.getElementById("today-menu").style.boxShadow="rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
+    }
+    function menuchange2(){
+      document.getElementById("today-div").style.display="none";
+      document.getElementById("total-div").style.display="block";
+      document.getElementById("today-menu").style.boxShadow="none";
+      document.getElementById("total-menu").style.boxShadow="rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
+    }
+    function profilemenu(){
+
+document.getElementById("profile-menu").style.display="inline-block";
+}
+document.body.addEventListener('click', fn, true);
+function fn(){
+    document.getElementById("profile-menu").style.display="none";
+}
+</script>

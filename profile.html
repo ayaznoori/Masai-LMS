@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src=" https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assests/style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <!-- nav-bar div start here -->
+        <div id="nav-bar">
+              <div id="left-nav"><img src="./assests/img/logo.png" width="100px" alt=""></div>
+              <div id="mid-nav"> </div>
+              <div id="right-nav">
+                <div id="pic-nav"><img src="./assests/img/img.jpg" width="30px" alt=""></div>
+                <div id="name-nav">Mohammad Ayaz Noori </div>
+                <a onclick="profilemenu()"><i class="fa-solid fa-angle-down"></i> </a>
+                <div id="profile-menu"><p>Manage Account</p>
+                    <p>Profile</p>
+                    <p>Log Out</p> </div>
+                  </div>
+               
+
+        </div>
+        <!-- nav-bar ends here -->
+        <!-- main-body starts here -->
+        <div id="main-body">
+        <!-- left-main-body start here -->
+            <div id="left-main-body">
+                <div class="dashboard "><a href="index.html"><i class="fa fa-house"></i>&nbsp;&nbsp;Dashboard</a></div>
+                <div class="assignments "><a href="assignments.html"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp; Assignments</a></div>
+                <div class="Tickets"><a href=""><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;Tickets</a></div>
+                <div class="notification"><a href=""><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;Notification</a></div>
+                <div class="ref-program"><a href="notification.html"><i class="fa-solid fa-hand-holding-hand"></i>&nbsp;&nbsp;Referral Program</a></div>
+                <div class="profile active" ><a href="profile.html"><i class="fa-solid fa-id-card"></i>&nbsp;&nbsp;My Profile</a></div>
+            </div>
+        <!-- left-main-body ends here -->
+       <!--  right-main-body starts here -->
+            <div id="right-main-body">
+                        <h3>Profile</h3>
+                        <hr>
+                        <div id="profile-detail">
+                        <!-- demo divs -->
+                        <div id="profile-pic">
+                                <img src="assests/img/img.jpg" alt="" >
+                                <p>Your profile pic is public</p>
+                        </div>
+                        <div id="profile-name">
+                            <form action="">
+                               <label for="f_name">First Name</label><br>
+                               <input type="text" id="f_name"><br><br>
+                               <label for="l_name">Last Name</label><br>
+                               <input type="text" id="l_name"><br><br>
+                               <input type="submit" id="submit_detail" value="save">
+                            </form>
+                        </div>
+                    
+               
+                        </div>
+           
+                    <div>
+                        <h3>Public Display Name</h3>
+                        <input type="text" name="" id="public-name" value="Mohammad Ayaz Noori">
+                    </div>
+       <br>
+       <br>
+                    <h3>Update Password</h3>
+                    <div id="u_password">
+                        <form action="" id="u_password_form">
+                        <label for="c_pass">Current Password</label><br>
+                        <input type="text" name="" id="c_pass" ><br><br>
+                        <label for="n_pass">Type New Password</label><br>
+                        <input type="text" name="" id="n_pass"><br><br>
+                        <label for="r_pass">Re-Enter Password</label><br>
+                        <input type="text" name="" id="r_pass"  ><br><br>
+                        <input type="button" value="Update">
+                        </form>
+                    </div>
+              <!--  right-main-body ends here -->
+            </div>
+            <!-- main-body ends here --> 
+        </div>
+</body>
+</html>
+<script >
+    function menuchange(){
+      document.getElementById("today-div").style.display="block";
+      document.getElementById("total-div").style.display="none";
+      document.getElementById("total-menu").style.boxShadow="none";
+      document.getElementById("today-menu").style.boxShadow="rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
+    }
+    function menuchange2(){
+      document.getElementById("today-div").style.display="none";
+      document.getElementById("total-div").style.display="block";
+      document.getElementById("today-menu").style.boxShadow="none";
+      document.getElementById("total-menu").style.boxShadow="rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset";
+    }
+    function profilemenu(){
+
+    document.getElementById("profile-menu").style.display="inline-block";
+    }
+    document.body.addEventListener('click', fn, true);
+    function fn(){
+        document.getElementById("profile-menu").style.display="none";
+    }
+</script>
